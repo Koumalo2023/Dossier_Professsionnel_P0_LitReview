@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "follows_user": [2, 3]
+    },
+    {
+      "id": 2,
+      "username": "alice",
+      "password": "alice123",
+      "follows_user": [1]
+    },
+    {
+      "id": 3,
+      "username": "bob",
+      "password": "bob123",
+      "follows_user": [1, 2]
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Les Misérables",
+      "userId": 1,
+      "description": "Je cherche des avis sur ce classique de Victor Hugo. Est-ce que le livre vaut la peine d'être lu malgré sa longueur ?",
+      "time_created": "2025-04-20T14:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "1984 de George Orwell",
+      "userId": 2,
+      "description": "J'hésite à lire ce livre. Que pensez-vous de cette dystopie ? Est-elle toujours d'actualité ?",
+      "time_created": "2025-04-21T10:15:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Le Petit Prince",
+      "userId": 3,
+      "description": "Un ami m'a recommandé ce livre. Est-ce vraiment un livre pour enfants ou les adultes peuvent aussi l'apprécier ?",
+      "time_created": "2025-04-22T16:45:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "ticketId": 2,
+      "userId": 1,
+      "rating": 5,
+      "headline": "Un chef-d'œuvre intemporel",
+      "content": "1984 est un livre visionnaire qui reste malheureusement très pertinent aujourd'hui. La façon dont Orwell a anticipé la surveillance de masse et la manipulation de l'information est stupéfiante. Je le recommande vivement à tous ceux qui s'intéressent à la politique et à la société.",
+      "time_created": "2025-04-21T14:20:00.000Z"
+    },
+    {
+      "id": 2,
+      "ticketId": 3,
+      "userId": 2,
+      "rating": 4,
+      "headline": "Simple mais profond",
+      "content": "Le Petit Prince est un livre qui parle autant aux adultes qu'aux enfants, mais de manière différente. Les enfants apprécieront l'histoire et les illustrations, tandis que les adultes y verront une réflexion profonde sur la vie, les relations et ce qui est vraiment important. Une lecture qui mérite d'être revisitée à différentes étapes de la vie.",
+      "time_created": "2025-04-23T09:10:00.000Z"
+    },
+    {
+      "id": 3,
+      "ticketId": 1,
+      "userId": 3,
+      "rating": 3,
+      "headline": "Un classique exigeant",
+      "content": "Les Misérables est sans aucun doute un chef-d'œuvre, mais il faut être prêt à s'investir. Le livre est très long et contient de nombreuses digressions historiques. Cependant, l'histoire principale et les personnages sont inoubliables. Je recommande de lire une version abrégée pour une première approche, ou de se lancer dans l'intégrale si vous êtes vraiment motivé.",
+      "time_created": "2025-04-24T18:30:00.000Z"
+    }
+  ]
+}
