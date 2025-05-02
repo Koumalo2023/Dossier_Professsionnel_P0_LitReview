@@ -1,0 +1,105 @@
+/* Reset et styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+  font-weight: $font-weight-regular;
+  color: $gris-anthracite;
+  background-color: $blanc-casse;
+  line-height: 1.5;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Typographie */
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-weight-semibold;
+  margin-bottom: $spacing-lg;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-weight: $font-weight-semibold;
+  margin-bottom: $spacing-md;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-semibold;
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+/* Header et navigation */
+header {
+  background-color: $blanc-pur;
+  box-shadow: $box-shadow;
+  padding: $spacing-md 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: $font-size-h2;
+  font-weight: $font-weight-semibold;
+  color: $rouge-orange;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: $spacing-md;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: $gris-anthracite;
+  font-weight: $font-weight-medium;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: $rouge-orange;
+}
+
+.nav-links a.active {
+  color: $rouge-orange;
+  font-weight: $font-weight-semibold;
+}
+
+/* Responsive */
+@media (max-width: $breakpoint-md) {
+  .nav {
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    margin-top: $spacing-md;
+  }
+}

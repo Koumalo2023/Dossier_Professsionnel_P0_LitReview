@@ -1,0 +1,190 @@
+@import 'variables';
+@import 'layout';
+@import 'components';
+
+/* Styles spécifiques aux pages */
+
+/* Page d'authentification */
+.auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: $spacing-xl;
+}
+
+.auth-tabs {
+  display: flex;
+  margin-bottom: $spacing-md;
+}
+
+.auth-tab {
+  flex: 1;
+  text-align: center;
+  padding: $spacing-sm;
+  cursor: pointer;
+  border-bottom: 2px solid $gris-clair;
+  
+  &.active {
+    border-bottom-color: $rouge-orange;
+    font-weight: $font-weight-semibold;
+  }
+}
+
+.auth-form {
+  margin-top: $spacing-lg;
+}
+
+/* Page de flux */
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-lg;
+}
+
+.feed-actions {
+  display: flex;
+  gap: $spacing-md;
+}
+
+.feed-filter {
+  margin-bottom: $spacing-md;
+  padding: $spacing-sm;
+  background-color: rgba($gris-clair, 0.3);
+  border-radius: $border-radius;
+}
+
+.ticket-card {
+  margin-bottom: $spacing-lg;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-meta {
+  color: $gris-moyen;
+  font-size: 10px;
+}
+
+.ticket-image {
+  max-width: 100%;
+  height: auto;
+  margin: $spacing-sm 0;
+  border-radius: $border-radius;
+}
+
+.review-card {
+  margin-left: $spacing-lg;
+  margin-bottom: $spacing-md;
+  border-left: 3px solid $rouge-orange;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-title {
+  font-weight: $font-weight-semibold;
+}
+
+/* Page d'abonnements */
+.subscription-form {
+  margin-bottom: $spacing-lg;
+}
+
+.subscription-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-lg;
+  
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subscription-list {
+  background-color: $blanc-pur;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $spacing-md;
+}
+
+.subscription-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-sm 0;
+  border-bottom: 1px solid $gris-clair;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Page de création/modification */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-divider {
+  margin: $spacing-lg 0;
+  border-top: 1px solid $gris-clair;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-md;
+  border: 2px dashed $gris-clair;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: $rouge-orange;
+  }
+}
+
+.file-upload-icon {
+  font-size: 24px;
+  margin-bottom: $spacing-sm;
+  color: $gris-moyen;
+}
+
+.file-upload-text {
+  color: $gris-moyen;
+}
+
+.rating-input {
+  display: flex;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+}
+
+.rating-option {
+  display: flex;
+  align-items: center;
+  
+  input[type="radio"] {
+    margin-right: $spacing-xs;
+  }
+}
+
+/* Responsive */
+@media (max-width: $breakpoint-sm) {
+  .feed-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feed-actions {
+    margin-top: $spacing-sm;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

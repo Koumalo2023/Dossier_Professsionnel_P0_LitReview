@@ -1,0 +1,261 @@
+/* Composants UI */
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $border-radius;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: $rouge-orange;
+  color: $blanc-pur;
+  
+  &:hover {
+    background-color: darken($rouge-orange, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $blanc-pur;
+  color: $rouge-orange;
+  border: 1px solid $rouge-orange;
+  
+  &:hover {
+    background-color: rgba($rouge-orange, 0.1);
+  }
+}
+
+.btn-success {
+  background-color: $vert-frais;
+  color: $blanc-pur;
+  
+  &:hover {
+    background-color: darken($vert-frais, 10%);
+  }
+}
+
+.btn-danger {
+  background-color: $rose-vif;
+  color: $blanc-pur;
+  
+  &:hover {
+    background-color: darken($rose-vif, 10%);
+  }
+}
+
+/* Formulaires */
+.form-group {
+  margin-bottom: $spacing-md;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: $spacing-xs;
+  font-weight: $font-weight-medium;
+}
+
+.form-control {
+  width: 100%;
+  padding: $spacing-sm;
+  border: 1px solid $gris-clair;
+  border-radius: $border-radius;
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+  
+  &:focus {
+    outline: none;
+    border-color: $rouge-orange;
+    box-shadow: 0 0 0 2px rgba($rouge-orange, 0.2);
+  }
+}
+
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Cartes */
+.card {
+  background-color: $blanc-pur;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: $spacing-md;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: $spacing-md;
+  border-bottom: 1px solid $gris-clair;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body {
+  padding: $spacing-md;
+}
+
+.card-footer {
+  padding: $spacing-md;
+  border-top: 1px solid $gris-clair;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Système d'étoiles pour les notations */
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  display: inline-flex;
+  margin-right: $spacing-sm;
+}
+
+.star {
+  color: $jaune-vif;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+/* Alertes */
+.alert {
+  padding: $spacing-md;
+  border-radius: $border-radius;
+  margin-bottom: $spacing-md;
+}
+
+.alert-success {
+  background-color: rgba($vert-frais, 0.1);
+  color: $vert-frais;
+  border: 1px solid rgba($vert-frais, 0.2);
+}
+
+.alert-danger {
+  background-color: rgba($rose-vif, 0.1);
+  color: $rose-vif;
+  border: 1px solid rgba($rose-vif, 0.2);
+}
+
+.alert-info {
+  background-color: rgba($cyan-fonce, 0.1);
+  color: $cyan-fonce;
+  border: 1px solid rgba($cyan-fonce, 0.2);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: $font-weight-medium;
+}
+
+.badge-primary {
+  background-color: $rouge-orange;
+  color: $blanc-pur;
+}
+
+.badge-secondary {
+  background-color: $gris-moyen;
+  color: $blanc-pur;
+}
+
+/* Listes */
+.list-group {
+  list-style: none;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+.list-group-item {
+  padding: $spacing-md;
+  border-bottom: 1px solid $gris-clair;
+  background-color: $blanc-pur;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Utilitaires */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-muted {
+  color: $gris-moyen;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: $spacing-xs;
+}
+
+.mb-2 {
+  margin-bottom: $spacing-sm;
+}
+
+.mb-3 {
+  margin-bottom: $spacing-md;
+}
+
+.mb-4 {
+  margin-bottom: $spacing-lg;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: $spacing-xs;
+}
+
+.mt-2 {
+  margin-top: $spacing-sm;
+}
+
+.mt-3 {
+  margin-top: $spacing-md;
+}
+
+.mt-4 {
+  margin-top: $spacing-lg;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
