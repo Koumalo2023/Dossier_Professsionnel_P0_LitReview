@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./assets/js",
+    "rootDir": "./assets/ts",
+    "sourceMap": true
+  },
+  "include": ["./assets/ts/**/*"],
+  "exclude": ["node_modules"]
+}
