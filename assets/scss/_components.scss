@@ -1,6 +1,10 @@
 /* Composants UI */
 
 /* Boutons */
+<<<<<<< HEAD
+=======
+// Bouton de base
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
 .btn {
   display: inline-block;
   padding: $spacing-sm $spacing-lg;
@@ -13,6 +17,7 @@
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .btn-primary {
   background-color: $rouge-orange;
   color: $blanc-pur;
@@ -22,10 +27,24 @@
   }
 }
 
+=======
+// Bouton principal (rouge-orange)
+.btn-primary {
+  background-color: $rouge-orange;
+  color: $blanc-pur;
+
+  &:hover {
+    background-color: rgba($rouge-orange, 0.9); // Réduit légèrement l'opacité
+  }
+}
+
+// Bouton secondaire (blanc avec bordure rouge-orange)
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
 .btn-secondary {
   background-color: $blanc-pur;
   color: $rouge-orange;
   border: 1px solid $rouge-orange;
+<<<<<<< HEAD
   
   &:hover {
     background-color: rgba($rouge-orange, 0.1);
@@ -47,6 +66,31 @@
   
   &:hover {
     background-color: darken($rose-vif, 10%);
+=======
+
+  &:hover {
+    background-color: rgba($rouge-orange, 0.1); // Fond semi-transparent
+  }
+}
+
+// Bouton succès (vert frais)
+.btn-success {
+  background-color: $vert-frais;
+  color: $blanc-pur;
+
+  &:hover {
+    background-color: rgba($vert-frais, 0.9); // Réduit légèrement l'opacité
+  }
+}
+
+// Bouton danger (rose vif)
+.btn-danger {
+  background-color: $rose-vif;
+  color: $blanc-pur;
+
+  &:hover {
+    background-color: rgba($rose-vif, 0.9); // Réduit légèrement l'opacité
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
   }
 }
 

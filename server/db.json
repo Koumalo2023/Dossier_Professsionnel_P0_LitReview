@@ -1,6 +1,7 @@
 {
   "users": [
     {
+<<<<<<< HEAD
       "id": 1,
       "username": "admin",
       "password": "admin123",
@@ -17,25 +18,69 @@
       "username": "bob",
       "password": "bob123",
       "follows_user": [1, 2]
+=======
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "follows_user": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "2",
+      "username": "alice",
+      "password": "alice123",
+      "follows_user": [
+        1
+      ]
+    },
+    {
+      "id": "3",
+      "username": "bob",
+      "password": "bob123",
+      "follows_user": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "bccb",
+      "username": "Patrice",
+      "password": "Koumalo-VS-123",
+      "follows_user": []
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
     }
   ],
   "tickets": [
     {
+<<<<<<< HEAD
       "id": 1,
+=======
+      "id": "1",
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
       "title": "Les Misérables",
       "userId": 1,
       "description": "Je cherche des avis sur ce classique de Victor Hugo. Est-ce que le livre vaut la peine d'être lu malgré sa longueur ?",
       "time_created": "2025-04-20T14:30:00.000Z"
     },
     {
+<<<<<<< HEAD
       "id": 2,
+=======
+      "id": "2",
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
       "title": "1984 de George Orwell",
       "userId": 2,
       "description": "J'hésite à lire ce livre. Que pensez-vous de cette dystopie ? Est-elle toujours d'actualité ?",
       "time_created": "2025-04-21T10:15:00.000Z"
     },
     {
+<<<<<<< HEAD
       "id": 3,
+=======
+      "id": "3",
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
       "title": "Le Petit Prince",
       "userId": 3,
       "description": "Un ami m'a recommandé ce livre. Est-ce vraiment un livre pour enfants ou les adultes peuvent aussi l'apprécier ?",
@@ -44,7 +89,11 @@
   ],
   "reviews": [
     {
+<<<<<<< HEAD
       "id": 1,
+=======
+      "id": "1",
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
       "ticketId": 2,
       "userId": 1,
       "rating": 5,
@@ -53,7 +102,11 @@
       "time_created": "2025-04-21T14:20:00.000Z"
     },
     {
+<<<<<<< HEAD
       "id": 2,
+=======
+      "id": "2",
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
       "ticketId": 3,
       "userId": 2,
       "rating": 4,
@@ -62,7 +115,11 @@
       "time_created": "2025-04-23T09:10:00.000Z"
     },
     {
+<<<<<<< HEAD
       "id": 3,
+=======
+      "id": "3",
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
       "ticketId": 1,
       "userId": 3,
       "rating": 3,
@@ -71,4 +128,8 @@
       "time_created": "2025-04-24T18:30:00.000Z"
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)

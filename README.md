@@ -11,30 +11,23 @@ L'application offre les fonctionnalités suivantes :
 - Gérer son compte (inscription, connexion)
 - Visualiser un flux personnalisé (billets et critiques des abonnements), trié antéchronologiquement
 
-## Technologies utilisées
-
-### Frontend
-- TypeScript pour la logique
-- SCSS compilé en CSS pour les styles
-- HTML pour la structure
-- Fetch API pour les requêtes au backend
-
-### Backend
-- JSON Server simulant une API REST
-- Fichier db.json pour stocker les données
-- Authentification via JWT stocké en localStorage
-
-## Installation et lancement
+## Guide d'installation et d'exécution
 
 ### Prérequis
-- Node.js (pour JSON Server et les outils de compilation)
-- npm ou yarn
+
+- Node.js (version 14 ou supérieure)
+- npm (inclus avec Node.js)
 
 ### Installation
 
+1. Clonez ou décompressez le projet dans un dossier de votre choix.
+
+2. Ouvrez un terminal et naviguez jusqu'au dossier du projet.
+
+3. Installez les dépendances nécessaires :
 
 ```bash
-npm install
+npm install -g typescript sass json-server
 ```
 
 ## Exécution de l'application
@@ -86,6 +79,19 @@ Vous pouvez vous connecter avec les identifiants suivants :
 
 Ou créer votre propre compte via le formulaire d'inscription.
 
+## Technologies utilisées
+
+### Frontend
+- TypeScript pour la logique
+- SCSS compilé en CSS pour les styles
+- HTML pour la structure
+- Fetch API pour les requêtes au backend
+
+### Backend
+- JSON Server simulant une API REST
+- Fichier db.json pour stocker les données
+- Authentification via JWT stocké en localStorage
+
 ## Structure du projet
 
 L'application suit l'architecture MVC (Modèle-Vue-Contrôleur) :
@@ -96,8 +102,9 @@ L'application suit l'architecture MVC (Modèle-Vue-Contrôleur) :
 - **Services** : `/assets/ts/services/` - Services partagés (authentification, API)
 - **Styles** : `/assets/scss/` - Styles SCSS organisés par composants
 
-
 ## Organigramme du projet
+
+```
 litreview/
 ├── index.html                  # Point d'entrée de l'application
 ├── assets/                     # Ressources statiques
@@ -134,7 +141,20 @@ litreview/
 ├── server/                     # Configuration du serveur JSON
 │   └── db.json                 # Base de données JSON
 └── README.md                   # Documentation du projet
+```
 
+## Fonctionnalités
+
+- Système d'authentification (connexion/inscription)
+- Gestion des tickets (création, modification, suppression)
+- Système de critiques (création, modification, suppression)
+- Système d'abonnements (suivre/ne plus suivre des utilisateurs)
+- Flux d'activité filtrable
+
+## Remarques
+
+- L'application utilise JSON Server comme backend simulé, ce qui signifie que les données sont stockées localement dans le fichier `server/db.json`.
+- Les mots de passe ne sont pas hachés dans cette version de démonstration, ne pas utiliser en production.
 
 ## Licence
 

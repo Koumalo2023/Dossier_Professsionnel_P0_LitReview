@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  litreview:
+    build: .
+    container_name: litreview
+    labels:
+      - "traefik.enable=true"
+      # Route pour le frontend
+      - "traefik.http.routers.litreview-front.rule=Host(`litreview.litreviews.duckdns.org`)"
+      - "traefik.http.routers.litreview-front.entrypoints=websecure"
+      - "traefik.http.routers.litreview-front.tls.certresolver=myresolver"
+      - "traefik.http.services.litreview-front.loadbalancer.server.port=8000"
+      
+      # Route pour l'API
+      - "traefik.http.routers.litreview-api.rule=Host(`api.litreview.litreviews.duckdns.org`)"
+      - "traefik.http.routers.litreview-api.entrypoints=websecure"
+      - "traefik.http.routers.litreview-api.tls.certresolver=myresolver"
+      - "traefik.http.services.litreview-api.loadbalancer.server.port=3000"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true

@@ -122,7 +122,11 @@ header {
   color: #FFFFFF;
 }
 .btn-primary:hover {
+<<<<<<< HEAD
   background-color: rgb(229.1714285714, 59.9942857143, 54.8285714286);
+=======
+  background-color: rgba(235, 104, 100, 0.9);
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
 }
 
 .btn-secondary {
@@ -139,7 +143,11 @@ header {
   color: #FFFFFF;
 }
 .btn-success:hover {
+<<<<<<< HEAD
   background-color: rgb(25.820754717, 135.179245283, 57.7169811321);
+=======
+  background-color: rgba(34, 178, 76, 0.9);
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
 }
 
 .btn-danger {
@@ -147,7 +155,11 @@ header {
   color: #FFFFFF;
 }
 .btn-danger:hover {
+<<<<<<< HEAD
   background-color: rgb(217.125, 25.875, 113.625);
+=======
+  background-color: rgba(232, 62, 140, 0.9);
+>>>>>>> 12f2ab2 (Ajout de l'application LITReview complète)
 }
 
 /* Formulaires */
